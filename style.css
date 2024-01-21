@@ -46,7 +46,7 @@ Helpers
 .container{ width: 86%; margin: 0 auto;}
 .container--small{ width: 50%; margin: 0 auto;}
 
-.text-gradient{background: linear-gradient(90deg, white, transparent); background-clip: text; -webkit-text-fill-color: transparent; display: inline-block; border: 1px solid red;;}
+.text-gradient{background: linear-gradient(90deg, white, transparent); background-clip: text; -webkit-text-fill-color: transparent; display: inline-block; }
 .text-gradient--vertical{background: linear-gradient(180deg, white, transparent ); background-clip: text; -webkit-text-fill-color: transparent;}
 
 @media (max-width: 1024px) {
