@@ -14,14 +14,14 @@ General
 	--white: #EEEDF0;
 
 	--fs-1:clamp(2.5rem, calc(2.5rem + 1vw), 5rem);
-	--fs-2:clamp(1rem, calc(1rem + 0.5vw), 3rem);
+	--fs-2:clamp(1rem, calc(1rem + 0.5vw), 2rem);
 	--fs-3:clamp(0.9rem, calc(0.9rem + 0.5vw), 1.3rem);
-	--fs-4:clamp(0.6rem, calc(0.6rem + 0.5vw), 1rem);
+	--fs-4:clamp(0.7rem, calc(0.7rem + 0.5vw), 1rem);
 
 	--margin-1: 24vh;
 	--margin-2: 16vh;
-	--margin-3: 4vh;
-	--margin-4: 2vh;
+	--margin-3: 8vh;
+	--margin-4: 4vh;
 
 	--timing: cubic-bezier(0,0,1,0.5)
 
@@ -30,7 +30,7 @@ General
 
 *, *::before,*::after{margin: 0; padding: 0; box-sizing: border-box;}
 body{font-family: 'Inter', sans-serif; color:var(--white); background-color: var(--black);}
-h1, h2, h3, h4, h5, h6{font-weight: 500; margin-block-end: var(--margin-3);  line-height: 1.5;} 
+h1, h2, h3, h4, h5, h6{font-weight: 500; margin-block-end: var(--margin-4);  line-height: 1.5;} 
 p{font-size: var(--fs-3); font-weight: 400; line-height: 2;}
 a{color: inherit; cursor: pointer;}
 img{width: 100%; height: auto;}
@@ -43,14 +43,15 @@ section{margin: var(--margin-2) auto !important;}
 /*--------------------------
 Helpers
 ---------------------------*/
-.container{border: 2px solid red; width: 86%; margin: 0 auto;}
-.container--small{border: 2px solid blue; width: 50%; margin: 0 auto;}
+.container{ width: 86%; margin: 0 auto;}
+.container--small{ width: 50%; margin: 0 auto;}
 
-.text-gradient{background: linear-gradient(90deg, white, transparent); background-clip: text; -webkit-text-fill-color: transparent;}
+.text-gradient{background: linear-gradient(90deg, white, transparent); background-clip: text; -webkit-text-fill-color: transparent; display: inline-block; border: 1px solid red;;}
 .text-gradient--vertical{background: linear-gradient(180deg, white, transparent ); background-clip: text; -webkit-text-fill-color: transparent;}
 
 @media (max-width: 1024px) {
 .container--small{width: 100%; }
+.container .container{width: 100%;}
 }
 
 
@@ -73,13 +74,13 @@ Button
 /*--------------------------
 Heaader
 ---------------------------*/
-.header{text-align: center; margin: var(--margin-2) auto;}
+.header{text-align: center; margin: var(--margin-3) auto;}
 .header__text h1{font-size: var(--fs-1);}
 .header__text h1 span{display: block;}
-.header__text p{margin-bottom: var(--margin-3);}
+.header__text p{margin-bottom: var(--margin-3); font-size: var(--fs-2);}
 
-.header__media{	border: 1px solid red; margin-top: var(--margin-2);;}
-.header__media video{	border: 3px solid green; width: 100%; height: 100%; object-fit: cover;}
+.header__media{	margin-top: var(--margin-2);}
+.header__media video{ width: 100%; height: 100%; object-fit: cover;}
 
 
 @media (max-width: 1024px) {
@@ -95,7 +96,7 @@ Features
 
 
 .features__grid{
-	margin: var(--margin-2) auto; display: grid; grid-template-rows: repeat(3, auto); grid-template-columns: repeat(4, 1fr); gap: 20px;
+	margin: var(--margin-3) auto; display: grid; grid-template-rows: repeat(3, auto); grid-template-columns: repeat(4, 1fr); gap: 20px;
 	grid-template-areas: 
 		"grid-item-1 grid-item-2 grid-item-2 grid-item-3"
 		"grid-item-4 grid-item-4 grid-item-5 grid-item-5"
@@ -103,8 +104,15 @@ Features
 	;
 }
 
+.features__grid--small{
+	grid-template-columns: repeat(4, 1fr); gap: 20px;
+	grid-template-areas: 
+		"grid-item-1 grid-item-2 grid-item-3 grid-item-4"
+	;
+}
+
 .features__grid__item{border: 2px solid var(--color-1--50); padding: var(--fs-2); border-radius: 2rem; background-color: var(--color-1--5); transition: 0.4s;}
-.features__grid__item:hover{background-color: var(--color-2); color: var(--black); border: 2px solid var(--color-2--50); transform: scale(1.02);}
+.features__grid__item:hover{background-color: var(--color-2); color: var(--black); border: 2px solid var(--color-2--50); }
 
 .features__grid__item:nth-child(1){grid-area: grid-item-1;}
 .features__grid__item:nth-child(2){grid-area: grid-item-2;}
@@ -125,7 +133,7 @@ Features
 		grid-template-areas: 
 			"grid-item-1 grid-item-2"
 			"grid-item-5 grid-item-5"
-			"grid-item-4 grid-item-3"
+			"grid-item-3 grid-item-4"
 			"grid-item-7 grid-item-7"
 			"grid-item-6 grid-item-8"
 		;
@@ -150,3 +158,32 @@ Features
 
 	.features__grid__item{ border-radius: 1rem;}
 }
+
+
+
+
+
+/*--------------------------
+Faq
+---------------------------*/
+.faq__header{text-align: center; }
+.faq__header h2{font-size: var(--fs-1);}
+
+.faq__list{list-style-type: none; margin: var(--margin-3) auto; display: flex; flex-direction: column;}
+.faq__list__item{cursor: pointer; border-bottom: 2px solid var(--white);  overflow: hidden;}
+
+.faq__list__item__question{display: flex; justify-content: space-between; align-items: center;   gap: 1rem ; padding: 0.8rem 0;}
+.faq__list__item__question h3{margin-block-end: 0; font-weight: 400;}
+.faq__list__item__question img{width: 1.5rem; filter: invert(45%) sepia(25%) saturate(1136%) hue-rotate(198deg) brightness(96%) contrast(85%); transition: transform 0.4s;}
+
+.faq__list__item__answer{max-height: 0; overflow: hidden; transition: max-height 0.4s; color: var(--color-1); }
+.faq__list__item__answer p {font-size: var(--fs-4); }
+
+.faq__list__item--open .faq__list__item__question img{transform: rotate(135deg);}
+.faq__list__item--open .faq__list__item__answer{max-height: 8rem; padding-bottom: 0.8rem;}
+
+
+
+
+
+
