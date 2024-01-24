@@ -208,7 +208,7 @@ Animation
 .watch--reveal .watch__item{transform: translateY(150%); transition: transform 0.8s;}
 .watch--reveal.in-view .watch__item{transform: translateY(0);}
 
-.watch--fade { opacity: 0; transform: scale(0.8); transition: transform 0.8s;}
+.watch--fade { opacity: 0; transform: scale(0.8); transition: 0.8s;}
 .watch--fade.in-view {transform: scale(1); opacity: 1;}
 
 
