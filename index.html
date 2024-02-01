@@ -11,29 +11,80 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap">
 
 	<link rel="stylesheet" href="style.css">
+	<link rel="icon" type="image/x-icon" href="/favicon.ico">
+
 
 	<!-- Inizio Schema Markup -->
     <script type="application/ld+json">
 		{
-		  "@context": "http://schema.org",
-		  "@type": "SoftwareApplication",
-		  "name": "Price Peeker Bot",
-		  "description": "Con Price Peeker Bot, il monitoraggio prezzi Amazon raggiunge nuovi livelli di efficienza. Risparmia ora in maniera intelligente.",
-		  "url": "https://www.pricepeekerbot.com",
-		  "applicationCategory": "Shopping",
-		  "operatingSystem": "TELEGRAM",
-		  "offers": {
-			"@type": "Offer",
-			"price": "0.00",
-			"priceCurrency": "EUR"
-		  },
-		  "screenshot": "https://www.pricepeekerbot.com/screenshot.jpg"
-		}
+			"@context": "https://schema.org",
+			"@graph": [
+			  {
+				"@type": "SoftwareApplication",
+				"name": "Price Peeker Bot",
+				"description": "Con Price Peeker Bot, il monitoraggio prezzi Amazon raggiunge nuovi livelli di efficienza. Risparmia ora in maniera intelligente.",
+				"url": "https://www.pricepeekerbot.com",
+				"applicationCategory": "Shopping",
+				"operatingSystem": "TELEGRAM",
+				"offers": {
+				  "@type": "Offer",
+				  "price": "0.00",
+				  "priceCurrency": "EUR"
+				},
+				"screenshot": "https://www.pricepeekerbot.com/screenshot.jpg"
+			  },
+			  {
+				"@type": "FAQPage",
+				"mainEntity": [
+				  {
+					"@type": "Question",
+					"name": "Come posso monitorare i prezzi su Amazon?",
+					"acceptedAnswer": {
+					  "@type": "Answer",
+					  "text": "Imposta alert di prezzo con Price Peeker Bot su Telegram. Invia il link del prodotto e il tuo prezzo target per ricevere notifiche immediate al raggiungimento del prezzo ideale."
+					}
+				  },
+				  {
+					"@type": "Question",
+					"name": "È possibile vedere lo storico dei prezzi su Amazon?",
+					"acceptedAnswer": {
+					  "@type": "Answer",
+					  "text": "Sì, Price Peeker Bot ti permette di visualizzare lo storico dei prezzi fino a 90 giorni, per utenti sia Premium che Free, aiutandoti a decidere il momento migliore per acquistare."
+					}
+				  },
+				  {
+					"@type": "Question",
+					"name": "Come trovare il prezzo più basso su Amazon?",
+					"acceptedAnswer": {
+					  "@type": "Answer",
+					  "text": "Con Price Peeker Bot, imposta un alert e monitora 24/7. Ricevi una notifica quando il prodotto scende al prezzo più basso, assicurandoti il miglior affare."
+					}
+				  }
+				]
+			  }
+			]
+		  }
+		  
 	</script>
 	<!-- Fine Schema Markup -->
+
+	<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-W2S86V3Z');
+	</script>
+	<!-- End Google Tag Manager -->
 </head>
 <body>
+	<!-- Google Tag Manager (noscript) -->
+	<noscript>
+		<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W2S86V3Z" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+	</noscript>
+	<!-- End Google Tag Manager (noscript) -->
 
+	<!-- Header -->
 	<header class="header">
 		<div class="container">
 
@@ -48,7 +99,7 @@
 				</div>
 
 				<div class="container--small watch watch--reveal">
-					<a href="" class="button watch__item delay-2">
+					<a href="https://telegram.me/PricePeekerBot" class="button watch__item delay-2">
 						<img src="./assets/icon/telegram.svg" alt="price peeker bot telegram icon"/>
 						Unisciti alla community
 					</a>
@@ -144,7 +195,7 @@
 
 			<div class="features__grid__item watch watch--fade">
 				<h3>1️⃣ Inizia</h3>
-				<p><a href="">Clicca qui</a> per aggiungere Price Peeker Bot a Telegram e premi 'Start' per attivarlo.</p>
+				<p><a href="https://telegram.me/PricePeekerBot">Clicca qui</a> per aggiungere Price Peeker Bot a Telegram e premi 'Start' per attivarlo.</p>
 			</div>
 
 			<div class="features__grid__item watch watch--fade">
@@ -187,17 +238,47 @@
 					<img src="./assets/icon/plus-solid.svg" alt="price peeker bot telegram icon"/>
 				</div>
 				<div class="faq__list__item__answer">
-					<p>Semplicemente cercando '@Price Peeker Bot' su Telegram o <a href="">cliccando questo link</a> che ti porterà al bot</p>
+					<p>Semplicemente cercando '@Price Peeker Bot' su Telegram o <a href="https://telegram.me/PricePeekerBot">cliccando questo link</a> che ti porterà al bot.</p>
 				</div>
 			</li>
 
 			<li class="faq__list__item watch watch--fade">
 				<div class="faq__list__item__question">
-					<h3>È davvero gratuito utilizzare Price Peeker Bot?</h3>
+					<h3>Posso usare Price Peeker Bot gratuitamente?</h3>
 					<img src="./assets/icon/plus-solid.svg" alt="price peeker bot telegram icon"/>
 				</div>
 				<div class="faq__list__item__answer">
-					<p>Assolutamente sì, Price Peeker Bot è completamente gratuito. Non ci sono costi nascosti per l'uso del bot.</p>
+					<p>Assolutamente sì, Price Peeker Bot offre una versione gratuita che ti permette di tracciare fino a 30 prodotti contemporaneamente.</p>
+				</div>
+			</li>
+
+			<li class="faq__list__item watch watch--fade">
+				<div class="faq__list__item__question">
+					<h3>Cosa accade se raggiungo il limite di 30 prodotti?</h3>
+					<img src="./assets/icon/plus-solid.svg" alt="price peeker bot telegram icon"/>
+				</div>
+				<div class="faq__list__item__answer">
+					<p>Se raggiungi il limite, puoi rimuovere prodotti non più necessari o passare alla versione Premium per monitorare fino a 100 prodotti e sbloccare funzioni esclusive.</p>
+				</div>
+			</li>
+
+			<li class="faq__list__item watch watch--fade">
+				<div class="faq__list__item__question">
+					<h3>Cosa offre la versione Premium di Price Peeker Bot?</h3>
+					<img src="./assets/icon/plus-solid.svg" alt="price peeker bot telegram icon"/>
+				</div>
+				<div class="faq__list__item__answer">
+					<p>La versione Premium espande le tue possibilità di risparmio permettendoti di monitorare fino a 100 prodotti contemporaneamente. Inoltre, sblocca l'accesso a personalità esclusive come il Mago Oscuro.</p>
+				</div>
+			</li>
+
+			<li class="faq__list__item watch watch--fade">
+				<div class="faq__list__item__question">
+					<h3>Quali personalità sono disponibili nella versione gratuita?</h3>
+					<img src="./assets/icon/plus-solid.svg" alt="price peeker bot telegram icon"/>
+				</div>
+				<div class="faq__list__item__answer">
+					<p>Nella versione gratuita di Price Peeker Bot, puoi godere delle compagnie del Robot Amichevole e del Vichingo Commerciante, ognuno con il proprio stile unico per rendere il monitoraggio prezzi un'esperienza divertente e personalizzata.</p>
 				</div>
 			</li>
 
@@ -243,17 +324,55 @@
 
 			<li class="faq__list__item watch watch--fade">
 				<div class="faq__list__item__question">
-					<h3>In quali orari riceverò le notifiche?</h3>
+					<h3>Come posso monitorare i prezzi su Amazon?</h3>
 					<img src="./assets/icon/plus-solid.svg" alt="price peeker bot telegram icon"/>
 				</div>
 				<div class="faq__list__item__answer">
-					<p>Per non disturbarti, inviamo le notifiche solo alle ore 10:00 e 17:00, ma puoi personalizzare questi orari secondo le tue preferenze.</p>
+					<p>Imposta alert di prezzo con Price Peeker Bot su Telegram. Invia il link del prodotto e il tuo prezzo target per ricevere notifiche immediate al raggiungimento del prezzo ideale.</p>
+				</div>
+			</li>
+
+			<li class="faq__list__item watch watch--fade">
+				<div class="faq__list__item__question">
+					<h3>È possibile vedere lo storico dei prezzi su Amazon?</h3>
+					<img src="./assets/icon/plus-solid.svg" alt="price peeker bot telegram icon"/>
+				</div>
+				<div class="faq__list__item__answer">
+					<p>Sì, Price Peeker Bot ti permette di visualizzare lo storico dei prezzi fino a 90 giorni, per utenti sia Premium che Free, aiutandoti a decidere il momento migliore per acquistare.</p>
+				</div>
+			</li>
+
+			<li class="faq__list__item watch watch--fade">
+				<div class="faq__list__item__question">
+					<h3>Come trovare il prezzo più basso su Amazon?</h3>
+					<img src="./assets/icon/plus-solid.svg" alt="price peeker bot telegram icon"/>
+				</div>
+				<div class="faq__list__item__answer">
+					<p>Con Price Peeker Bot, imposta un alert e monitora 24/7. Ricevi una notifica quando il prodotto scende al prezzo più basso, assicurandoti il miglior affare.</p>
 				</div>
 			</li>
 
 		</ul>
 
 	</section>
+
+	<!-- Footer -->
+	<footer class="footer container">
+
+		<div class="watch watch--reveal">
+			<h2 class="text-gradient watch__item">Cosa aspetti?</h2>
+		</div>
+		<div class="watch watch--reveal">
+			<p class="watch__item">Compra ora su Amazon al prezzo più basso!</p>
+		</div>
+		<div class="watch watch--reveal">
+			<a href="https://telegram.me/PricePeekerBot" class="button watch__item delay-2">
+				<img src="./assets/icon/telegram.svg" alt="price peeker bot telegram icon"/>
+				Usa Price Peeker Bot Gratis
+			</a>
+		</div>
+
+	</footer>
 
 	<script src="./scripts.js"></script>
 </body>

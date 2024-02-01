@@ -215,9 +215,12 @@ Faq
 .faq__list__item__answer p {font-size: var(--fs-4);  opacity: 0.8; }
 
 .faq__list__item--open .faq__list__item__question img{transform: rotate(135deg);}
-.faq__list__item--open .faq__list__item__answer{max-height: 8rem; padding-bottom: 0.8rem;}
+.faq__list__item--open .faq__list__item__answer{max-height: 10rem; padding-bottom: 0.8rem;}
 
 
+.footer{text-align: center; margin-bottom: var(--margin-1); }
+.footer h2{font-size: var(--fs-1);}
+.footer p {text-wrap: balance; margin-bottom: var(--margin-3);}
 
 
 /*--------------------------
