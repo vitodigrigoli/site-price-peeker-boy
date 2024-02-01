@@ -3,6 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="#CCFF00" />
+
 	<title>Price Peeker Bot | Monitoraggio Prezzi Amazon</title>
 	<meta name="description" content="Con Price Peeker Bot, il monitoraggio prezzi Amazon raggiunge nuovi livelli di efficienza. Risparmia ora in maniera intelligente.">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,6 +14,20 @@
 
 	<link rel="stylesheet" href="style.css">
 	<link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+	<link rel="canonical" href="https://pricepeekerbot.com" />
+
+	<!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Price Peeker Bot | Monitoraggio Prezzi Amazon" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://pricepeekerbot.com" />
+    <meta property="og:image" content="https://https://pricepeekerbot.com/screenshot.png" />
+    <meta property="og:description" content="Con Price Peeker Bot, il monitoraggio prezzi Amazon raggiunge nuovi livelli di efficienza. Risparmia ora in maniera intelligente." />
+    <meta property="og:site_name" content="Price Peeker Bot" />
+    <meta property="og:locale" content="it_IT" /> 
+
+    <!-- Fine Open Graph Meta Tags -->
+
 
 
 	<!-- Inizio Schema Markup -->
@@ -31,7 +47,7 @@
 				  "price": "0.00",
 				  "priceCurrency": "EUR"
 				},
-				"screenshot": "https://www.pricepeekerbot.com/screenshot.jpg"
+				"screenshot": "https://www.pricepeekerbot.com/screenshot.png"
 			  },
 			  {
 				"@type": "FAQPage",
@@ -99,7 +115,7 @@
 				</div>
 
 				<div class="container--small watch watch--reveal">
-					<a href="https://telegram.me/PricePeekerBot" class="button watch__item delay-2">
+					<a href="https://telegram.me/PricePeekerBot" class="button watch__item delay-2" id="button__header">
 						<img src="./assets/icon/telegram.svg" alt="price peeker bot telegram icon"/>
 						Unisciti alla community
 					</a>
@@ -109,7 +125,7 @@
 	
 			<div class="header__media container">
 				<video poster="./assets/media/price-peeker-bot-output.webp" autoplay muted loop>
-					<source src="./assets/media/price-peeker-bot-output.mp4" type="video/mp4">
+					<!--source src="./assets/media/price-peeker-bot-output.mp4" type="video/mp4"-->
 					<source src="./assets/media/price-peeker-bot-output.webm" type="video/webm">
 				</video>
 			</div>
@@ -195,7 +211,7 @@
 
 			<div class="features__grid__item watch watch--fade">
 				<h3>1️⃣ Inizia</h3>
-				<p><a href="https://telegram.me/PricePeekerBot">Clicca qui</a> per aggiungere Price Peeker Bot a Telegram e premi 'Start' per attivarlo.</p>
+				<p><a href="https://telegram.me/PricePeekerBot" id="tutorial__begin">Clicca qui</a> per aggiungere Price Peeker Bot a Telegram e premi 'Start' per attivarlo.</p>
 			</div>
 
 			<div class="features__grid__item watch watch--fade">
@@ -366,7 +382,7 @@
 			<p class="watch__item">Compra ora su Amazon al prezzo più basso!</p>
 		</div>
 		<div class="watch watch--reveal">
-			<a href="https://telegram.me/PricePeekerBot" class="button watch__item delay-2">
+			<a href="https://telegram.me/PricePeekerBot" class="button watch__item delay-2" id="button__footer">
 				<img src="./assets/icon/telegram.svg" alt="price peeker bot telegram icon"/>
 				Usa Price Peeker Bot Gratis
 			</a>

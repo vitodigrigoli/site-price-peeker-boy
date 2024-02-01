@@ -59,8 +59,8 @@ Helpers
 .container{ width: 86%; margin: 0 auto;}
 .container--small{ width: 60%; margin: 0 auto;}
 
-.text-gradient{background: linear-gradient(90deg, white, transparent); background-clip: text; -webkit-text-fill-color: transparent; display: inline-block; }
-.text-gradient--vertical{background: linear-gradient(180deg, white, transparent ); background-clip: text; -webkit-text-fill-color: transparent;}
+.text-gradient{background: linear-gradient(90deg, white, transparent); background-clip: text; -webkit-background-clip: text; -moz-background-clip: text; -webkit-text-fill-color: transparent; -moz-text-fill-color: transparent; display: inline-block; background-size: 100%; }
+.text-gradient--vertical{background: linear-gradient(180deg, white, transparent ); background-clip: text; -webkit-background-clip: text; -moz-background-clip: text; -webkit-text-fill-color: transparent; -moz-text-fill-color: transparent; display: inline-block; background-size: 100%;}
 
 @media (max-width: 1024px) {
 .container--small{width: 100%; }
